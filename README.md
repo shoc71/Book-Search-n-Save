@@ -5,7 +5,7 @@ written by shoc71;
 
 ## Description
 
-An online digital library that stores your favourite books on your account on a MERN stack application that can be retireved from anywhere. You can login/signup from anywhere as all information is saved on a Database and it is encrypted with bcryptjs and jsonwebtoken and more. The whole application is written in Typescript to make the whole process fun, fast, and smooth for an user-friendly experience.
+An online digital library that stores your favourite books on your account on a MERN stack application that can be retireved from anywhere. You can login/signup from anywhere as all information is saved on a Database and it is encrypted with bcryptjs and jsonwebtoken and more. Application written in Typescript, GraphQL, and using the Apollo-Server to make the whole process fun, fast, and smooth for an user-friendly experience.
 
 ## Table of Contents
 
