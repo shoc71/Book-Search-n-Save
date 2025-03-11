@@ -15,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "@apollo/server": "^4.11.3",
+    "@apollo/subgraph": "^2.10.0",
     "@types/dotenv": "^6.1.1",
     "@types/graphql": "^14.2.3",
     "@types/typescript": "^0.4.29",

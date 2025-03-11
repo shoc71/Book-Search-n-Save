@@ -11,6 +11,12 @@ import { authenticateToken } from './services/auth.js';
 
 const __dirname = path.resolve();
 
+const PORT = process.env.PORT || 3001;
+const app = express();
+
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+
 const server = new ApolloServer({
     typeDefs,
     resolvers,
@@ -21,12 +27,6 @@ const server = new ApolloServer({
 const startApolloServer = async () => {
     await server.start(); // start apollo server
     await connectDB();
-
-    const PORT = process.env.PORT || 3001;
-    const app = express();
-
-    app.use(express.urlencoded({ extended: false }));
-    app.use(express.json());
 
     app.use('/graphql', expressMiddleware(server as any,
         { context: authenticateToken as any}
